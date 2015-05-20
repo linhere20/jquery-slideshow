@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>slideshow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="stylesheet" href="css/slideshow.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+
+<body>
+    <div id="slideShow"></div>
+
+    <script>
+        $(function(){
+            $("#slideShow").slideShow({
+                /*可用配置
+                delay: 5000,   //图片播放间隔时间
+                duration: 250, //切换动画持续时间
+                showDots: true,//是否显示图片导航点
+                touch: true,   //(true:触摸，false:单击)导航点切换图片
+                complete: function(){}, //动画完成后回调
+                slides: [] //轮播图片组
+                */
+                slides: [
+                    {image: '<img src="images/beauty1.jpg">', href:"###"},
+                    {image: '<img src="images/beauty2.jpg">', href:"###"},
+                    {image: '<img src="images/beauty3.jpg">', href:"###"},
+					{image: '<img src="images/beauty4.jpg">', href:"###"}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

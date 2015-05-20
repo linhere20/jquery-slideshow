@@ -1,0 +1,42 @@
+#slideShow{
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 375px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+#slideShow ol, #slideShow ol li{
+    margin: 0;
+    padding: 0;
+}
+#slideShow ol{
+    position: relative;
+    list-style: none;
+}
+#slideShow ol li{
+    float: left;
+}
+#slideShow .dots{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+	text-align: center;
+}
+#slideShow ul.dots li{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background-color: #aaa;
+    border-radius: 6px;
+    text-indent: -9999px;
+}
+#slideShow ul li.active{
+    background-color: #fff;
+}
